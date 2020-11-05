@@ -19,7 +19,7 @@ class RegistrarActivity : AppCompatActivity() {
     private lateinit var txtApellido:EditText
     private lateinit var txtEdad:EditText
     private lateinit var txtCorreo:EditText
-    private lateinit var txtContraseña:EditText
+    private lateinit var txtPassword:EditText
     private lateinit var progressBar: ProgressBar
     private lateinit var dbReference: DatabaseReference
     private lateinit var database: FirebaseDatabase
@@ -33,7 +33,7 @@ class RegistrarActivity : AppCompatActivity() {
         txtApellido = findViewById(R.id.txtApellido)
         txtEdad = findViewById(R.id.txtEdad)
         txtCorreo = findViewById(R.id.txtCorreo)
-        txtContraseña = findViewById(R.id.txtContraseña)
+        txtPassword = findViewById(R.id.txtPassword)
         progressBar = findViewById(R.id.progressBar)
 
         database = FirebaseDatabase.getInstance()
@@ -51,7 +51,7 @@ class RegistrarActivity : AppCompatActivity() {
         val apellido:String = txtApellido.text.toString()
         val edad:String = txtEdad.text.toString()
         val correo:String = txtCorreo.text.toString()
-        val contraseña:String = txtContraseña.text.toString()
+        val contraseña:String = txtPassword.text.toString()
 
         if (!TextUtils.isEmpty(nombre) && !TextUtils.isEmpty(apellido) && !TextUtils.isEmpty(edad) && !TextUtils.isEmpty(correo) &&
             !TextUtils.isEmpty(contraseña)){

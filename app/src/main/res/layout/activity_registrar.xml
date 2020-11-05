@@ -10,56 +10,57 @@
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
-        android:indeterminate="true"
         android:layout_height="wrap_content"
-        android:visibility="gone"/>
+        android:indeterminate="true"
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
         android:layout_margin="10dp"
-        android:inputType="textPersonName"/>
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/txtApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Apellido"
         android:layout_margin="10dp"
-        android:inputType="textPersonName"/>
+        android:hint="Apellido"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/txtEdad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Edad"
         android:layout_margin="10dp"
-        android:inputType="number"/>
+        android:hint="Edad"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo Electronico"
         android:layout_margin="10dp"
-        android:inputType="textEmailAddress"/>
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/txtContraseña"
+        android:id="@+id/txtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="Contraseña"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword" />
 
     <Button
-        android:onClick="registrar"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:layout_gravity="center"
         android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"/>
+        android:onClick="registrar"
+        android:text="Registrar"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
