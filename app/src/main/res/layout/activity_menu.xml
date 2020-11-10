@@ -5,12 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginTop="150dp"
     tools:context=".MenuActivity">
 
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/agendar"
-        android:text="Agendar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    <Button
+        android:onClick="crearCita"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Crear cita"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:onClick= "cancelarCitas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar Citas"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:onClick="servicios"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Servicios"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+        
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context="com.example.barbershop.LoginActivity">
 
@@ -26,7 +27,8 @@
         android:layout_height="wrap_content"
         android:hint="Usuario"
         android:layout_margin="10dp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_person"/>
 
     <EditText
         android:id="@+id/txtPassword"
@@ -34,7 +36,8 @@
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:layout_margin="10dp"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock"/>
 
     <Button
         android:onClick="iniciarSesion"

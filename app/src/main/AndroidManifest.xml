@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".ServiciosActivity"></activity>
+        <activity android:name=".CancelarActivity" />
+        <activity android:name=".AgendarActivity" />
+        <activity android:name=".MenuActivity" />
         <activity android:name=".ForgotPassActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
