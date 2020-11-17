@@ -3,10 +3,9 @@ package com.example.barbershop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ServiciosActivity : AppCompatActivity() {
-
+class PropActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_servicios)
+        setContentView(R.layout.activity_prop)
     }
 }

@@ -46,6 +46,14 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"/>
 
+
+        <TextView
+            android:onClick="cerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:gravity="center"
+            android:layout_margin="50dp"/>
         
 
     </LinearLayout>
