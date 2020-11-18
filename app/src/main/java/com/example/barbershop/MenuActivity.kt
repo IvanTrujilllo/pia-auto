@@ -14,4 +14,8 @@ class MenuActivity : AppCompatActivity() {
     fun crearCita(view: View){
         startActivity(Intent(this, AgendarActivity::class.java))
     }
+
+    fun servicios(view: View){
+        startActivity(Intent(this, ServiciosActivity::class.java))
+    }
 }
