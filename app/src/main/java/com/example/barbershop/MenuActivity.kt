@@ -11,8 +11,12 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
     }
 
+    fun cancelarCita(view: View) {
+        startActivity(Intent( this, AppointmentsIndexActivity::class.java))
+    }
+
     fun crearCita(view: View){
-        startActivity(Intent(this, AgendarActivity::class.java))
+        startActivity(Intent(this, AddAppointmentActivity::class.java))
     }
 
     fun servicios(view: View){

@@ -27,7 +27,7 @@
         android:textColor="@android:color/white"/>
 
     <Button
-        android:onClick= "cancelarCitas"
+        android:onClick= "cancelarCita"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Cancelar Citas"

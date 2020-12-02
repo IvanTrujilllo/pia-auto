@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgendarActivity">
+    tools:context=".AddAppointmentActivity">
     
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:visibility="gone" />
 
             <EditText
-                android:id="@+id/txtNombre"
+                android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -32,7 +32,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/txtApellido"
+                android:id="@+id/etLastname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -40,7 +40,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/txtEdad"
+                android:id="@+id/etAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -48,31 +48,41 @@
                 android:inputType="number" />
 
             <EditText
-                android:id="@+id/txtServicio"
+                android:id="@+id/etService"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:hint="Ej. Corte de pelo, corte de barba, etc."
                 android:inputType="text" />
 
-            <CalendarView
+            <DatePicker
+                android:id="@+id/cvDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"/>
 
             <TimePicker
-                android:id="@+id/txtHora"
+                android:id="@+id/tpTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"/>
 
             <Button
+                android:id="@+id/btnAddAppointment"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@color/colorPrimary"
-                android:onClick="AgendarCita"
                 android:text="Agendar Cita"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnCancelNewAppointment"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="Cancelar Cita"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
