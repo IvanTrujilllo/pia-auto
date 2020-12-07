@@ -52,14 +52,20 @@ public class AddAppointmentActivity extends AppCompatActivity {
                 etLastname.setError(null);
                 etAge.setError(null);
                 etService.setError(null);
+                StringBuilder dateBuilder = new StringBuilder();
                 String name = etName.getText().toString(),
                         lastname = etLastname.getText().toString(),
                         ageAsString = etAge.getText().toString(),
-                        service = etService.getText().toString();
+                        service = etService.getText().toString(),
+                        dateAsString;
 
-                Calendar calendar = new GregorianCalendar(datePicker.getYear(),
-                        datePicker.getMonth(), datePicker.getDayOfMonth(),
-                        timePicker.getCurrentHour(), timePicker.getCurrentMinute());
+                dateBuilder.append(String.valueOf(datePicker.getYear()) + "-");
+                dateBuilder.append(String.valueOf(datePicker.getMonth()) + "-");
+                dateBuilder.append(String.valueOf(datePicker.getDayOfMonth()) + " ");
+                dateBuilder.append(String.format("%02d:%02d",
+                        timePicker.getCurrentHour(), timePicker.getCurrentMinute()));
+
+                dateAsString = dateBuilder.toString();
 
                 if ("".equals(name)){
                     etName.setError("Escribe el nombre de la mascota");
@@ -84,7 +90,7 @@ public class AddAppointmentActivity extends AppCompatActivity {
                 }
 
                 // after all validations passed
-                Appointment newAppointment = new Appointment(name, lastname, age, calendar.getTimeInMillis());
+                Appointment newAppointment = new Appointment(name, lastname, age, dateAsString);
                 long id = appointmentsController.newAppointment(newAppointment);
                 if (id == -1) {
                     // an error occurred
