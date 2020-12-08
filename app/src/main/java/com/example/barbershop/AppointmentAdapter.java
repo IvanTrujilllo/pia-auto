@@ -42,12 +42,8 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         Appointment appointment = appointmentsList.get(i);
 
         String appointmentName = appointment.getName() + " " + appointment.getLastname();
-        Log.println(1, "bug", appointmentName);
         int appointmentAge = appointment.getAge();
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(appointment.getDate());
-        SimpleDateFormat format = new SimpleDateFormat("EEEE, MMMM d, yyyy 'at' h:mm a");
-        String date = format.format(calendar.getTime());
+        String date = appointment.getDate();
 
         myViewHolder.name.setText(appointmentName);
         myViewHolder.age.setText(String.valueOf(appointmentAge));

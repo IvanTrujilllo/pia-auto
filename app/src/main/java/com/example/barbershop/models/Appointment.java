@@ -4,18 +4,18 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Appointment {
-    private String name, lastname;
+    private String name, lastname, date;
     private int age;
-    private long date, id;
+    private long id;
 
-    public Appointment(String name, String lastname, int age, long date){
+    public Appointment(String name, String lastname, int age, String date){
         this.name = name;
         this.lastname = lastname;
         this.age = age;
         this.date = date;
     }
 
-    public Appointment(String name, String lastnmae, int age, long date, long id) {
+    public Appointment(String name, String lastname, int age, String date, long id) {
         this.name = name;
         this.lastname = lastname;
         this.age = age;
@@ -47,11 +47,11 @@ public class Appointment {
         this.age = age;
     }
 
-    public long getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(long date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

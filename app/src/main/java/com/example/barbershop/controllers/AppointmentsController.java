@@ -73,7 +73,7 @@ public class AppointmentsController {
             String nameFromDatabase = cursor.getString(0);
             String lastnameFromDatabase = cursor.getString(1);
             int ageFromDatabase = cursor.getInt(2);
-            long dateFromDatabase = cursor.getInt(3);
+            String dateFromDatabase = cursor.getString(3);
             long appointmentId = cursor.getLong(4);
 
             appointments.add(new Appointment(nameFromDatabase, lastnameFromDatabase,

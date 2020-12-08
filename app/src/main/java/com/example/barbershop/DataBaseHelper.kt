@@ -19,7 +19,7 @@ class DataBaseHelper : SQLiteOpenHelper {
     public override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(
             String.format(
-                "CREATE TABLE IF NOT EXISTS appointments(id INTEGER PRIMARY KEY AUTOINCREMENT, name text, lastname text, age int, date long, service text)"
+                "CREATE TABLE IF NOT EXISTS appointments(id INTEGER PRIMARY KEY AUTOINCREMENT, name text, lastname text, age int, date text, service text)"
             )
         );
     }
